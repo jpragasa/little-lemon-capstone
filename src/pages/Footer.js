@@ -1,11 +1,11 @@
 import Contact from './Contact';
-import logo from './Logo.png';
+import logo from '../FooterLogo.png';
 import Navigation from './Navigation';
 import SocialMedia from './SocialMedia';
 function Footer() {
     return <footer>
-        <img src={logo} alt='Little Lemon Logo' />
-        <Navigation />
+        <img className='footerLogo' src={logo} alt='Little Lemon Logo' />
+        <Navigation isTopNav={false}/>
         <Contact />
         <SocialMedia />
     </footer>

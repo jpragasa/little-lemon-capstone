@@ -1,6 +1,6 @@
 function Main() {
     return <main>
-        Main
+        <h1>Little Lemon</h1>
     </main>
 }
 

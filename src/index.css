@@ -28,14 +28,12 @@ a {
 
 .topNavLogo {
   position: relative;
-  top: 1rem;
   width: 200px;
   height: 50px;
 }
 
 .homeLogo {
-  position:relative;
-  top:.5rem;
+  position: relative;
   width: 24px;
   height: 24px;
 }
@@ -62,7 +60,7 @@ h1 {
   justify-content: center;
   list-style: none;
   margin-top: 1rem;
-  font-size: 40px;
+  font-size: 20px;
 }
 
 .navigation>ul>li {
@@ -70,7 +68,7 @@ h1 {
 }
 
 .navigation>ul>li:hover {
-  font-size: 42px;
+  font-size: 20.9px;
   transition: .5s;
   text-decoration: underline;
   text-decoration-color: #333333;
@@ -97,7 +95,10 @@ footer {
   .navigation>ul,
   footer,
   .contact>ul>h5,
-  .socialMedia>ul>h5 {
+  .socialMedia>ul>h5,
+  .ctaContainer,
+  .ctaContainer>article,
+  .ctaContainer>article>p {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,3 +188,48 @@ footer {
 }
 
 /*  */
+
+/* Call To Action */
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #495E57;
+  font-family: 'Markazi Text', 'Karla', sans-serif;
+}
+
+.ctaContainer > article >h1 {
+  color: #F4CE14;
+}
+
+.ctaContainer > article > h2 {
+  color: #EDEFEE;
+  margin-top: -2rem;
+}
+
+.ctaContainer>article>button {
+  padding: .5rem;
+  font-family: 'Markazi Text', 'Karla', 'sans-sarif';
+  background-color: #F4CE14;
+}
+
+.ctaContainer>article {
+  margin-left: 2rem;
+  width: 20%;
+}
+
+
+
+.ctaContainer>article>p {
+  line-height: 1.5;
+  color: #EDEFEE;
+}
+
+.ctaImage {
+  width: 30rem;
+  height: 40rem;
+  position: relative;
+  top: 100px;
+  border-radius: 16px;
+  margin-left: 2rem;
+}

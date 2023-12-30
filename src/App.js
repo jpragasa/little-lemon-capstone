@@ -1,14 +1,14 @@
 import './App.css';
-import Footer from './pages/Footer';
-import Header from './pages/Header';
-import Main from './pages/Main';
-import Navigation from './pages/Navigation';
+import Footer from './pages/Structure/Footer';
+import Header from './pages/Structure/Header';
+import Main from './pages/Structure/Main';
+
 function App() {
   return (
     <>
-      <Header/>
-      <Main/>
-      <Footer/>
+      <Header />
+      <Main />
+      <Footer />
     </>
   );
 }

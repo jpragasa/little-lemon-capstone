@@ -1,38 +1,340 @@
-.App {
-  text-align: center;
+.rounded {
+  border-radius: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*  */
+
+/* Structure */
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.topNavLogo {
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+
+.homeLogo {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-family: 'Markazi Text', serif;
+}
+
+main {
+  font-family: 'Markazi Text', serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+.navigation>ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+.navigation>ul>li {
+  margin-right: 1rem;
+}
+
+.navigation>ul>li:hover {
+  font-size: 20.9px;
+  transition: .5s;
+  text-decoration: underline;
+  text-decoration-color: #333333;
+}
+
+.navigation>ul>li>a {
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+  color: #333333;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #495e57;
+}
+
+@media screen and (max-width: 992px) {
+
+  header,
+  .navigation,
+  main,
+  .navigation>ul,
+  footer,
+  .contact>ul>h5,
+  .socialMedia>ul>h5,
+  .ctaContainer,
+  .ctaContainer>article,
+  .ctaContainer>article>p,
+  .specials,
+  .online,
+  .testimonials,
+  .aboutUs,
+  .cards,
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  .specials > .specialsHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .specials > .specialsHeading > button {
+    position: absolute;
+    transform: translate(-115px,35px);
+  }
+
+  .cardHeader > .price {
+    position:relative;
+    margin-left: 1rem;
+  }
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footerNav>ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  list-style: none;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footerNav>ul>li {
+  padding-bottom: .5rem;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footerNav>ul>li:hover {
+  font-size: 20px;
+  transition: .5s;
+  text-decoration: underline;
+  text-decoration-color: #333333;
+}
+
+.footerNav>ul>li>a {
+  color: #EDEFEE;
+  font-family: 'Markazi Text', serif;
+}
+
+.footerLogo {
+  position: relative;
+  bottom: 3rem;
+}
+
+.contact>ul {
+  display: flex;
+  position: relative;
+  bottom: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  font-family: 'Markazi Text', serif;
+}
+
+.contact>ul>h5 {
+  font-size: 20px;
+  color: #333333;
+}
+
+.contact>ul>li {
+  padding-bottom: .5rem;
+  font-size: 18px;
+}
+
+.contact>ul>li {
+  color: #EDEFEE;
+}
+
+.socialMedia>ul {
+  display: flex;
+  position: relative;
+  bottom: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  font-family: 'Markazi Text', serif;
+}
+
+.socialMedia>ul>h5 {
+  font-size: 20px;
+  color: #333333;
+}
+
+.socialMedia>ul>li {
+  padding-bottom: .5rem;
+  font-size: 18px;
+}
+
+.socialMedia>ul>li:hover {
+  font-size: 20px;
+  transition: .5s;
+}
+
+.socialMedia>ul>li>a {
+  color: #EDEFEE;
+}
+
+/*  */
+
+/* Call To Action */
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #495E57;
+  font-family: 'Markazi Text', 'Karla', sans-serif;
+  padding-bottom: 1rem;
+}
+
+.ctaContainer>article>h1 {
+  color: #F4CE14;
+}
+
+.ctaContainer>article>h2 {
+  color: #EDEFEE;
+  margin-top: -2rem;
+}
+
+button {
+  padding: .5rem;
+  font-family: 'Markazi Text', 'Karla', 'sans-sarif';
+  background-color: #F4CE14;
+}
+
+.ctaContainer>article {
+  margin-left: 2rem;
+  width: 20%;
+}
+
+
+
+.ctaContainer>article>p {
+  line-height: 1.5;
+  color: #EDEFEE;
+}
+
+.ctaImage {
+  width: 30rem;
+  height: 40rem;
+  position: relative;
+  top: 100px;
+  border-radius: 16px;
+  margin-left: 2rem;
+}
+
+/* Specials and Cards*/
+.specials {
+  display: flex;
+  flex-direction: column;
+}
+
+.specialsHeading {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.specialsHeading > button {
+  position:relative;
+  left:15rem;
+  margin: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: lightgray;
+  border-radius: 16px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.price {
+  color:#FBAE3C;
+  font-weight: bolder;
+}
+
+.applyKarla {
+  font-family: 'Karla','Markazi Text',sans-serif;
+  font-weight: bolder;
+}
+
+/* Testimonials */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  background-color: #495E57;
+  padding: 5rem;
+}
+
+.testimonials > h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.card > figure > img {
+  width: 200px;
+}
+/* About Us Component */
+.aboutUs {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.aboutUs > section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.aboutUs > section > h2 {
+display: flex;
+justify-content: center;
+}
+
+.stock1 {
+  position:relative;
+  width: 10%;
+}
+
+.stock2 {
+  position:relative;
+  bottom:5rem;
 }

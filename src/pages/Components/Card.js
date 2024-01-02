@@ -34,7 +34,7 @@ export default function Card({
                 <section className="card applyKarla">
                     <figure>
                         {
-                            new Array(cardItemRating).fill('').map((_, index) => <Rating/>)
+                            new Array(cardItemRating).fill('').map((_, index) => <Rating key={index}/>)
                         }
                     </figure>
                     <figure>

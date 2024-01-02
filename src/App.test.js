@@ -1,8 +1,17 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { queryByTestId, render } from "@testing-library/react";
+import App from '../src/App'
+import Homepage from "./pages/Components/Homepage";
+import CallToAction from "./pages/Components/CallToAction";
+import BookingForm from "./pages/Components/BookingForm";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('Homepage component', () => {
+    it('should render the component onto the screen', () => {
+        expect(Homepage).toBeTruthy();
+    });
+});
+
+describe('Booking form component', () => {
+    it('should render the component onto the screen', () => {
+        expect(BookingForm).toBeTruthy();
+    });
 });

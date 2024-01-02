@@ -7,7 +7,7 @@ function Navigation({ isTopNav }) {
             <li><Link className='homeLogo' to='/'><img src={home} /></Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/menu'>Menu</Link></li>
-            <li><Link to='/reservations'>Reservations</Link></li>
+            <li><Link to='/booking'>Reservations</Link></li>
             <li><Link to='/orderonline'>Order Online</Link></li>
             <li><Link to='/login'>Login</Link></li>
 

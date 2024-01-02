@@ -1,5 +1,7 @@
+import Specials from "./Specials";
+
 export default function Menu() {
     return (
-        <h1>This is the Menu page</h1>
+        <Specials noHeader={false}/>
     );
 }

@@ -5,12 +5,12 @@ import Testimonials from "./Testimonials";
 
 export default function Homepage() {
     return (
-        <>
+        <section data-testid="ctaexists"> 
             <CallToAction />
             <Specials />
             <Testimonials/>
             <About/>
-        </>
+        </section>
 
     );
 }

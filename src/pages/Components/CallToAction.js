@@ -1,5 +1,8 @@
 import callToActionImage from '../../restauranfood.jpg';
+import {useNavigate} from 'react-router-dom'
 export default function CallToAction() {
+    const navigate = useNavigate();
+
     return (
         <section className='ctaContainer'>
             <article>
@@ -13,10 +16,10 @@ At Little Lemon, we take pride in crafting a menu that celebrates the versatilit
 
 Our chefs, passionate about infusing the brightness of lemons into their creations, source only the finest ingredients to ensure each bite is a burst of sunshine. Whether you're here for a leisurely brunch, a quick lunch, or a delightful dinner, Little Lemon invites you to savor the essence of Lakeland's culinary spirit through our citrus-inspired offerings. So, join us at 1234 Lemon Pie Ave., where every visit promises to be a zestful celebration of flavors and community.
                 </p>
-                <button className='rounded'>Reserve a Table</button>
+                <button className='rounded' onClick={() => navigate('/booking')}>Reserve a Table</button>
             </article>
             <figure>
-                <img className='ctaImage' src={callToActionImage} />
+                <img className='ctaImage' src={callToActionImage}/>
                 {/* <figcaption>The image shows the layout of a qwerty keyboard.</figcaption> */}
             </figure>
         </section>

@@ -4,7 +4,7 @@ function Navigation({ isTopNav }) {
     return <nav className={isTopNav ? "navigation" : "footerNav"}>
         <ul>
 
-            <li><Link className='homeLogo' to='/'><img src={home} /></Link></li>
+            <li><Link className='homeLogo' to='/'><img src={home} alt='home house logo'/></Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/menu'>Menu</Link></li>
             <li><Link to='/booking'>Reservations</Link></li>

@@ -19,7 +19,7 @@ Our chefs, passionate about infusing the brightness of lemons into their creatio
                 <button className='rounded' onClick={() => navigate('/booking')}>Reserve a Table</button>
             </article>
             <figure>
-                <img className='ctaImage' src={callToActionImage}/>
+                <img className='ctaImage' src={callToActionImage} alt='stock image of a waiter carrying food.'/>
                 {/* <figcaption>The image shows the layout of a qwerty keyboard.</figcaption> */}
             </figure>
         </section>

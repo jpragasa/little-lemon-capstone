@@ -44,14 +44,14 @@ export default function BookingForm({ availableDatesAndTime, setAvailableDatesAn
         setAvailableDatesAndTime(removeFromList(date, time))
         navigate('/bookingSuccess')
     }
-    return <section>
+    return <section className="booking">
         <header className="bookingHeader">Book your reservation</header>
         <form className="bookingForm" onSubmit={handleSubmit}>
 
             <label htmlFor="res-date">Choose Date:</label>
-            <input data-testid="date" value={date} type="date" id="res-date" onChange={(e) => handleDateChange(e.target.value)} />
+            <input className="rounded" data-testid="date" value={date} type="date" id="res-date" onChange={(e) => handleDateChange(e.target.value)} required/>
             <label htmlFor="res-time">Choose Time: </label>
-            <select value={time} id="res-time" onChange={(e) => setTime(e.target.value)}>
+            <select className="rounded" defaultValue={time} id="res-time" onChange={(e) => setTime(e.target.value)} required>
                 {
 
                     availableDatesAndTime?.map((_, index) => {
@@ -65,16 +65,16 @@ export default function BookingForm({ availableDatesAndTime, setAvailableDatesAn
                 }
             </select>
             <label htmlFor="guests">Number of guests: </label>
-            <input value={guests} type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => setGuests(e.target.value)} />
+            <input  className="rounded" value={guests} type="number" placeholder="1" min={1} max={10} id="guests" onChange={(e) => setGuests(e.target.value)} />
             <label htmlFor="occasion">Occasion:</label>
-            <select id="occasion" value={occasion} onChange={(e) => setOccasion(e.target.value)}>
+            <select className="rounded" id="occasion" defaultValue={occasion} onChange={(e) => setOccasion(e.target.value)}>
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-            <input className="rounded" type="submit" value="Make your reservation" />
-            <h3>Available Times: </h3>
-            <AvailableTimes availableDatesAndTime={availableDatesAndTime} />
+            <input className="rounded" type="submit" value="Make your reservation" aria-label="On Click"/>
         </form>
+        <h3 className="availableTimes">Available Times: </h3>
+            <AvailableTimes availableDatesAndTime={availableDatesAndTime} />
     </section>
 
 }
